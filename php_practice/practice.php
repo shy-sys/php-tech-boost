@@ -37,4 +37,4 @@ $calendar = [
 ];
 
 //12月を表示する
-echo $calender[Decemder];
+echo $calender["Decemder"];
