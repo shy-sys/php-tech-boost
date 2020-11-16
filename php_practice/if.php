@@ -2,7 +2,7 @@
 
 //$name にあなたの名前を代入し、if文で　$nameがあなたの名前だったら『私はあなたの名前です』、もし違ったら『あなたの名前では無いと表示
 $name="ゆうすけ";
-if($name = "ゆうすけ") {
+if($name == "ゆうすけ") {
 	echo "私はゆうすけです";
 } else {
 	echo "あなたの名前ではありません";
@@ -18,8 +18,8 @@ echo $total;
 
 //＄fruits に配列で好きなフルーツを5個代入し、foreach文で順番に出力してください。
 $fruits = array("りんご","いちご","キウイ","レモン","なし");
-foreach($fruits as $fruits){
-	echo "要素は". $fruits;
+foreach($fruits as $fruit){
+	echo "要素は". $fruit;
 	echo "/n";
 }
 
