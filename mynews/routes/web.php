@@ -22,5 +22,5 @@ Route::group(['prefix' => 'admin'], function() {
 Route::group(['prefix' => 'admin'], function() {
 Route::get('news/create', 'Admin\NewsController@add');
 Route::get('news/delete', 'Admin\ProfileController@delete');
-Route::get('news/update', 'Admin\ProfileController@update');　
+Route::get('news/update', 'Admin\ProfileController@update');
 });
