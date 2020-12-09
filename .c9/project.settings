@@ -3,6 +3,9 @@
         "@tabSize": 1,
         "@useSoftTabs": false
     },
+    "build": {
+        "@saveall": true
+    },
     "instance": {
         "@automaticShutdown": "30"
     },
