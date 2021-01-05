@@ -32,5 +32,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
      Route::get('news/create', 'Admin\NewsController@add');
-     Route::post('news/create', 'Admin\NewsController@create'); # 追記
+     Route::post('news/create', 'Admin\NewsController@create'); 
+     Route::get('news/create', 'Admin\ProfileController@add');
+     Route::post('news/create', 'Admin\ProfileController@create');
 });
