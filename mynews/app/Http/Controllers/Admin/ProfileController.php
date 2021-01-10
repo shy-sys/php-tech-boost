@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Profile;
+use App\History;
+use Carbon\Carbon;
+
 class ProfileController extends Controller
 {
     //
@@ -64,6 +67,12 @@ public function update(Request $request)
       $profile = Profile::find($request->id);
       // 削除する
       $profile->delete();
+       // 以下を追記
+      $history = new History;
+      $history->profile_id = $profile->id;
+      $history->edited_at = Carbon::now();
+      $history->save();
+
       return redirect('admin/profile/');
   }  
 
