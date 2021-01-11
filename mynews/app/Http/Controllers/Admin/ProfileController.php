@@ -57,7 +57,7 @@ public function update(Request $request)
       // 該当するデータを上書きして保存する
       $profile->fill($profile_form)->save();
       
-      return redirect('admin/profile/edit');
+      return redirect('admin/profile/edit?id=' . $request->id);
     }
 	
  // 以下を追記　　
