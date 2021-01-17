@@ -35,8 +35,8 @@
                     <div class="form-group row">
                         <label class="col-md-2">自己紹介欄</label>
                         <div class="col-md-10">
-                        <input type="radio" name="gender" value="male">男性
-                        <input type="radio" name="gender" value="male">女性
+                        <input type="text" class="form-control" name="introduction" value="{{ $profile_form->introduction}}">
+
                         </div>
                     </div>
                     </div>
