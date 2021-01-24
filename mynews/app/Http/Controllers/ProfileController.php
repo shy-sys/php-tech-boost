@@ -4,13 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProfileController extends Controller
-{
- use App\Profile;
+use App\Profile;
 
 class ProfileController extends Controller
 {
-    public function index(Request $request)
+
+public function index(Request $request)
     {
         $posts = Profile::all()->sortByDesc('updated_at');
 
@@ -25,4 +24,4 @@ class ProfileController extends Controller
         return view('profile.index', ['headline' => $headline, 'posts' => $posts]);
     }
 }
-}
+
